@@ -65,8 +65,8 @@ def do_LSTM_Regression():
 
     #construct LSTM based on keras
     model = Sequential()
-    model.add(LSTM(200,activation='tanh', input_shape=(X_train.shape[1], X_train.shape[2])))
-    model.add(Dense(1,activation='relu'))
+    model.add(LSTM(100, activation='tanh', input_shape=(X_train.shape[1], X_train.shape[2])))
+    model.add(Dense(1, activation='relu'))
     model.compile(loss='mse', optimizer='adam')
     #model.fit(X_train, y_train, epochs=1100, batch_size=100, validation_data=(X_val, y_val), verbose=2, shuffle=False)
     model=load_model('lstm_model_8805_a8485.h5')# load the history best model to recovery the best result
