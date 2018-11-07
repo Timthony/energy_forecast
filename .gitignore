@@ -1,0 +1,6 @@
+.idea*
+*.pyc
+*.xml
+*.html
+*.csv
+*/*.csv
